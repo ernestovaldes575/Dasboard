@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@import "tailwindcss";
+
+@theme {
+    /* Aquí es donde creamos el "lenguaje" de tu marca */
+    --color-gov-dark: #0f172a;
+    /* Un azul muy oscuro (Slate 900) */
+    --color-gov-primary: #4f46e5;
+    /* El Indigo 600 corporativo */
+    --color-gov-accent: #10b981;
+    /* Esmeralda para estados de éxito */
+}
+
+@layer components {
+    .card-esta {
+        /* Encapsulamos el comportamiento de 'group' */
+        @apply bg-white p-6 rounded-3xl border border-slate-200 shadow-sm transition-colors;
+        @apply hover:border-gov-primary;
+
+        /* Opcional: Si quieres que los hijos reaccionen 
+           específicamente a este componente */
+        &:hover {
+            .card-title {
+                @apply text-gov-primary;
+            }
+        }
+    }
+}

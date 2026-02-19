@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/output.css">
+</head>
+<body>
+    <div class="flex min-h-screen bg-slate-50">
+        <aside class="fixed inset-y-0 left-0 w-64 bg-gov-dark text-white p-6 shadow-2xl z-50">
+            <div class="flex items-center gap-3 mb-10 px-2">
+                <div class="h-8 w-8 bg-gov-primary rounded-lg flex items-center justify-center font-bold">E</div>
+                <span class="text-xl font-bold tracking-tight">AdminPanel</span>
+            </div>
+
+            <nav class="space-y-2">
+                <a href="" class="flex items-center gap-3 p-3 rounded-xl bg-white/10 text-white font-medium">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                        </svg>
+                    </span>
+                    Dashboard
+                </a>
+                <a href="#" class="flex items-center gap-3 p-3 rounded-xl text-slate-400 hover:bg-white/5 hover:text-white transition">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 0 0 2.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 0 0-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25ZM6.75 12h.008v.008H6.75V12Zm0 3h.008v.008H6.75V15Zm0 3h.008v.008H6.75V18Z" />
+                        </svg>
+                    </span>
+                    Registros
+                </a>
+                <a href="#" class="flex items-center gap-3 p-3 rounded-xl text-slate-400 hover:bg-white/5 hover:text-white transition">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.325.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 0 1 1.37.49l1.296 2.247a1.125 1.125 0 0 1-.26 1.431l-1.003.827c-.293.241-.438.613-.43.992a7.723 7.723 0 0 1 0 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.955.26 1.43l-1.298 2.247a1.125 1.125 0 0 1-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.47 6.47 0 0 1-.22.128c-.331.183-.581.495-.644.869l-.213 1.281c-.09.543-.56.94-1.11.94h-2.594c-.55 0-1.019-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 0 1-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 0 1-1.369-.49l-1.297-2.247a1.125 1.125 0 0 1 .26-1.431l1.004-.827c.292-.24.437-.613.43-.991a6.932 6.932 0 0 1 0-.255c.007-.38-.138-.751-.43-.992l-1.004-.827a1.125 1.125 0 0 1-.26-1.43l1.297-2.247a1.125 1.125 0 0 1 1.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.086.22-.128.332-.183.582-.495.644-.869l.214-1.28Z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                        </svg>
+                    </span>
+                    Ajustes
+                </a>
+            </nav>
+        </aside>
+
+        <main class="flex-1 ml-64 p-8">
+            <header class="mb-10 flex justify-between items-end">
+                <div>
+                    <h1 class="text-3xl font-black text-slate-900">Panel de Gestión</h1>
+                    <p class="text-slate-500">Monitoreo de Datos</p>
+                </div>
+                <div class="text-xs font-bold text-slate-400 uppercase tracking-widest">
+                    Actualizado: 19 Feb 2026
+                </div>
+            </header>
+            
+
+            <div class="grid grid-cols-1 md:grid-cols-3 mb-8 gap-6">
+
+                <div class="card-esta">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="p-3 bg-indigo-50 text-gov-primary shadow rounded-xl">
+                            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                            </svg>
+                        </div>
+                        <span class="text-indigo-500 text-xs font-black">+12%</span>
+                    </div>
+                    <p class="text-slate-500 text-sm font-medium">Trámites Totales</p>
+                    <p class="text-3xl font-black text-slate-900">1,285</p>
+                </div>
+
+                <div class="card-esta">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="p-3 bg-emerald-50 text-emerald-600 shadow rounded-2xl">
+                            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                            </svg>
+                        </div>
+                        <span class="text-emerald-500 text-sm font-black">+5.4%</span>
+                    </div>
+                    <p class="text-slate-500 text-sm font-medium">Ciudadanos Registrados</p>
+                    <p class="text-3xl font-black text-slate-900">856</p>
+                </div>
+
+                <div class="card-esta">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="p-3 bg-amber-50 text-amber-600 shadow rounded-2xl">
+                            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <span class="text-amber-500 text-sm font-black">-2m</span>
+                    </div>
+                    <p class="text-slate-500 text-sm font-medium">Promedio de Respuesta</p>
+                    <p class="text-3xl font-black text-slate-900">14m</p>
+                </div>
+            </div>
+
+
+            <div class="flex flex-col md:flex-row gap-4 mb-2">
+                <div class="relative flex-1">
+                    <span class="absolute inset-y-0 left-0 pl-3 flex items-center text-slate-400">
+                        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </span>
+                    <input type="text" placeholder="Buscar Ciudadano o Trámite"
+                            class="pl-10 w-full p-3 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-gov-primary outline-none transition shadow-sm">
+                </div>
+
+                <select class="p-3 bg-white border border-slate-200 rounded-xl text-slate-500 outline-none shadow-sm">
+                    <option>Todos los Estados</option>
+                    <option>Completado</option>
+                    <option>Pendiente</option>
+                </select>
+            </div>
+            <section class="mt-10 bg-white rounded-3xl border border-slate-200 shadow-sm overflow-hidden">
+                <div class="p-6 border-b border-slate-100 flex justify-between items-center">
+                    <h2 class="text-xl font-bold text-slate-900">Registros Recientes</h2>
+                    <button class="px-4 py-2 bg-gov-primary text-white text-sm font-bold rounded-lg hover:bg-indigo-700 transition">
+                        + Nuevo Registro
+                    </button>
+                </div>
+                
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-slate-50 text-slate-400 text-[10px] font-black uppercase tracking-widest">
+                                <td class="px-6 py-4">Usuario / Ciudadano</td>
+                                <td class="px-6 py-4">Servicio / Trámite</td>
+                                <td class="px-6 py-4">Estado</td>
+                                <td class="px-6 py-4">Fecha</td>
+                                <td class="px-6 py-4">Acciones</td>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-100 text-sm">
+                            <tr class="hover:bg-slate-50 transition">
+                                <td class="px-6 py-4 font-bold text-slate-700">Ernesto Valdes</td>
+                                <td class="px-6 py-4 text-slate-500">Consulta Catastral</td>
+                                <td class="px-6 py-4">
+                                    <span class="inline-flex items-center gap-1.5 px-3 py-1 bg-emerald-100 text-emerald-700 rounded-full text-[10px] font-bold uppercase">
+                                        <span class="h-1.5 w-1.5 bg-emerald-500 rounded-full animate-pulse"></span>
+                                        Completado
+                                    </span>
+                                </td>
+                                <td class="px-6 py-4 text-slate-500 font-mono">
+                                    19-02-2026
+                                </td>
+                                <td class="px-6 py-4">
+                                    <button class="text-indigo-600 hover:text-indigo-900 font-bold">Editar</button>
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition">
+                                <td class="px-6 py-4 font-bold text-slate-700">Juan Arriaga</td>
+                                <td class="px-6 py-4 text-slate-500">Registro Civil</td>
+                                <td class="px-6 py-4">
+                                    <span class="inline-flex items-center gap-1.5 px-3 py-1 bg-amber-100 text-amber-700 rounded-full text-[10px] font-bold uppercase">
+                                        <span class="h-1.5 w-1.5 bg-amber-500 rounded-full animate-pulse"></span>
+                                        Pendiente
+                                    </span>
+                                </td>
+                                <td class="px-6 py-4 text-slate-500 font-mono">
+                                    19-02-2026
+                                </td>
+                                <td class="px-6 py-4">
+                                    <button class="text-indigo-600 hover:text-indigo-900 font-bold">Editar</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
